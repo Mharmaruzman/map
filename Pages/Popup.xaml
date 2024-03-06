@@ -1,0 +1,539 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:StudentGuide.ViewModels"
+             x:Class="StudentGuide.Pages.Popup"
+             mc:Ignorable="d"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.BindingContext>
+        <local:MainViewModel />
+    </ContentPage.BindingContext>
+
+
+
+    <Grid RowDefinitions=".05*,.5*" >
+
+        <Image x:Name="mapImage" Source="imap.jpg" Grid.RowSpan="4" Aspect="Fill"  />
+
+
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1">
+            <Button 
+                        Command="{Binding ChangeDataCommand}"
+                        CommandParameter="1"
+                        WidthRequest="50"
+                        HeightRequest="30"
+                        Margin="0,0,115,665"
+                        VerticalOptions="End"
+                        BackgroundColor="Transparent"
+                        TextColor="White"
+                        Rotation="90"
+                        ZIndex="2"
+                        HorizontalOptions="Center"
+                        />
+        </VerticalStackLayout>
+
+
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1">
+            <Button 
+                        Command="{Binding ChangeDataCommand}"
+                        CommandParameter="2"
+                        WidthRequest="50"
+                        HeightRequest="30"
+                        Margin="10,0,130,360"
+                        ZIndex="2"
+                        HorizontalOptions="Center"
+                        BackgroundColor="Transparent"
+                        TextColor="White"
+                        VerticalOptions="End"
+                        Rotation="90"
+                        CornerRadius="10" />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1">
+            <Button 
+                        Command="{Binding ChangeDataCommand}"
+                        CommandParameter="3"
+                        WidthRequest="25"
+                        HeightRequest="80"
+                        Margin="10,0,150,460"
+                        ZIndex="2"
+                        HorizontalOptions="Center"
+                        VerticalOptions="End"
+                        BackgroundColor="Transparent"
+                        TextColor="White"
+                        Rotation="90"
+                         />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1">
+            <Button 
+             Command="{Binding ChangeDataCommand}"
+             CommandParameter="4"
+             WidthRequest="20"
+             HeightRequest="50"
+             Margin="10,0,230,585"
+             ZIndex="2"
+             HorizontalOptions="Center"
+             VerticalOptions="End"
+             BackgroundColor="Transparent"
+             TextColor="White"
+             Rotation="90"
+             />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1">
+            <Button 
+             Command="{Binding ChangeDataCommand}"
+             CommandParameter="5"
+             WidthRequest="30"
+            HeightRequest="60"
+             Margin="9,0,130,270"
+             ZIndex="2"
+              HorizontalOptions="Center"
+             VerticalOptions="End"
+             BackgroundColor="Transparent"
+             TextColor="White"
+             Rotation="90"
+             CornerRadius="10" />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout>
+            <Button
+             Command="{Binding ChangeDataCommand}"
+             CommandParameter="6"
+            WidthRequest="30"
+            HeightRequest="50"
+            Margin="270,8,10,0"
+             ZIndex="2"
+             HorizontalOptions="Center"
+             VerticalOptions="End"
+             BackgroundColor="Transparent"
+             TextColor="White"
+             Rotation="90"
+             CornerRadius="10" />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1">
+            <Button 
+             Command="{Binding ChangeDataCommand}"
+             CommandParameter="7"
+             WidthRequest="25"
+             HeightRequest="80"
+             Margin="0,93,10,0"
+             ZIndex="2"
+             HorizontalOptions="Center"
+             VerticalOptions="End"
+             BackgroundColor="Transparent"
+             TextColor="White"
+             Rotation="90"
+              />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout>
+            <Button 
+             Command="{Binding ChangeDataCommand}"
+             CommandParameter="8"
+             WidthRequest="30"
+             HeightRequest="55"
+             Margin="0,25,150,20"
+             ZIndex="2"
+             HorizontalOptions="Center"
+             VerticalOptions="End"
+             BackgroundColor="Transparent"
+             TextColor="White"
+             Rotation="90"
+             />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1">
+            <Button 
+             Command="{Binding ChangeDataCommand}"
+             CommandParameter="9"
+             WidthRequest="30"
+             HeightRequest="30"
+             Margin="10,10,200,395"
+             ZIndex="2"
+             HorizontalOptions="Center"
+             VerticalOptions="End"
+             BackgroundColor="Transparent"
+             TextColor="White"
+             Rotation="90"
+             />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1">
+            <Button 
+             Command="{Binding ChangeDataCommand}"
+             CommandParameter="10"
+            WidthRequest="35"
+             HeightRequest="100"
+             Margin="240,60,0,6"
+             ZIndex="2"
+             HorizontalOptions="Center"
+             VerticalOptions="End"
+             BackgroundColor="Transparent"
+             TextColor="White"
+             Rotation="90"
+             CornerRadius="10" />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1">
+            <Button 
+             Command="{Binding ChangeDataCommand}"
+             CommandParameter="11"
+             WidthRequest="25"
+             HeightRequest="80"
+             Margin="0,38,10,0"
+             ZIndex="2"
+             HorizontalOptions="Center"
+             VerticalOptions="End"
+             BackgroundColor="Transparent"
+             TextColor="White"
+             Rotation="90"
+              />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1">
+            <Button 
+             Command="{Binding ChangeDataCommand}"
+             CommandParameter="12"
+             WidthRequest="60"
+             HeightRequest="60"
+             Margin="10,559,120,0"
+             ZIndex="2"
+             HorizontalOptions="Center"
+             VerticalOptions="End"
+             BackgroundColor="Transparent"
+             TextColor="White"
+             Rotation="90"
+             CornerRadius="10" />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1">
+            <Button 
+             Command="{Binding ChangeDataCommand}"
+             CommandParameter="13"
+            WidthRequest="30"
+            HeightRequest="50"
+            Margin="190,0,0,120"
+             ZIndex="2"
+             HorizontalOptions="Center"
+             VerticalOptions="Start"
+             BackgroundColor="Transparent"
+             TextColor="White"
+             Rotation="90"
+              />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1">
+            <Button 
+             Command="{Binding ChangeDataCommand}"
+             CommandParameter="14"
+             WidthRequest="30"
+             HeightRequest="150"
+             Margin="240,0,0,460"
+             ZIndex="2"
+             HorizontalOptions="Center"
+             VerticalOptions="End"
+             BackgroundColor="Transparent"
+             TextColor="White"
+             Rotation="90"
+              />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout>
+            <Button 
+             Command="{Binding ChangeDataCommand}"
+             CommandParameter="15"
+             WidthRequest="25"
+             HeightRequest="40"
+             Margin="0,145,45,0"
+             ZIndex="2"
+             HorizontalOptions="Center"
+             VerticalOptions="End"
+             BackgroundColor="Transparent"
+             TextColor="White"
+             Rotation="90"
+             />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1">
+            <Button 
+             Command="{Binding ChangeDataCommand}"
+             CommandParameter="16"
+             WidthRequest="20"
+             HeightRequest="40"
+             Margin="0,0,45,602"
+             ZIndex="2"
+             HorizontalOptions="Center"
+             VerticalOptions="End"
+             BackgroundColor="Transparent"
+             TextColor="White"
+             Rotation="90"
+              />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1">
+            <Button 
+             Command="{Binding ChangeDataCommand}"
+             CommandParameter="17"
+             WidthRequest="30"
+             HeightRequest="35"
+             Margin="0,0,125,580"
+             ZIndex="2"
+             HorizontalOptions="Center"
+             VerticalOptions="End"
+             BackgroundColor="Transparent"
+             TextColor="White"
+             Rotation="90"
+              />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1">
+            <Button 
+             Command="{Binding ChangeDataCommand}"
+             CommandParameter="18"
+             WidthRequest="30"
+             HeightRequest="40"
+             Margin="10,0,280,420"
+             ZIndex="2"
+             HorizontalOptions="Center"
+             VerticalOptions="End"
+             BackgroundColor="Transparent"
+             TextColor="White"
+             Rotation="90"
+             CornerRadius="10" />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1">
+            <Button 
+             Command="{Binding ChangeDataCommand}"
+             CommandParameter="19"
+             WidthRequest="20"
+             HeightRequest="40"
+             Margin="0,0,45,649"
+             ZIndex="2"
+             HorizontalOptions="Center"
+             VerticalOptions="End"
+             BackgroundColor="Transparent"
+             TextColor="White"
+             Rotation="90"
+              />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1">
+            <Button
+             Command="{Binding ChangeDataCommand}"
+             CommandParameter="20"
+             WidthRequest="40"
+             HeightRequest="45"
+             Margin="110,0,0,570"
+             ZIndex="2"
+             HorizontalOptions="Center"
+             VerticalOptions="End"
+             BackgroundColor="Transparent"
+             TextColor="White"
+             Rotation="90"
+              />
+        </VerticalStackLayout>
+
+
+        <VerticalStackLayout>
+            <Button 
+              Command="{Binding ChangeDataCommand}"
+              CommandParameter="21"
+              WidthRequest="55"
+              HeightRequest="60"
+              Margin="0,159,210,0"
+              ZIndex="2"
+              HorizontalOptions="Center"
+              VerticalOptions="Center"
+              BackgroundColor="Transparent"
+              TextColor="White"
+              Rotation="90"
+               />
+        </VerticalStackLayout>
+
+
+        <VerticalStackLayout>
+            <Button 
+              Command="{Binding ChangeDataCommand}"
+              CommandParameter="22"
+              WidthRequest="40"
+              HeightRequest="50"
+              Margin="150,45,0,0"
+              ZIndex="2"
+              HorizontalOptions="Center"
+              VerticalOptions="End"
+              BackgroundColor="Transparent"
+              TextColor="White"
+              Rotation="90"
+              />
+        </VerticalStackLayout>
+
+
+        <VerticalStackLayout >
+            <Button 
+            Command="{Binding ChangeDataCommand}"
+            CommandParameter="23"
+            WidthRequest="90"
+            HeightRequest="49"
+            Margin="145,154,0,0"
+            ZIndex="2"
+            HorizontalOptions="Center"
+            VerticalOptions="End"
+            BackgroundColor="Transparent"
+            TextColor="White"
+            Rotation="90"
+             />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout>
+            <Button 
+            Command="{Binding ChangeDataCommand}"
+            CommandParameter="24"
+            WidthRequest="35"
+            HeightRequest="65"
+            Margin="155,80,0,0"
+            ZIndex="2"
+            HorizontalOptions="Center"
+            VerticalOptions="End"
+            BackgroundColor="Transparent"
+            TextColor="White"
+            Rotation="90"
+             />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1">
+            <Button 
+        Command="{Binding ChangeDataCommand}"
+        CommandParameter="25"
+        WidthRequest="90"
+        HeightRequest="80"
+        Margin="0,340,110,0"
+        ZIndex="2"
+        HorizontalOptions="Center"
+        VerticalOptions="End"
+        BackgroundColor="Transparent"
+        TextColor="White"
+        Rotation="90"
+         />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout>
+            <Button 
+            Command="{Binding ChangeDataCommand}"
+            CommandParameter="26"
+            WidthRequest="25"
+            HeightRequest="45"
+            Margin="0,170,40,0"
+            ZIndex="2"
+            HorizontalOptions="Center"
+            VerticalOptions="End"
+            BackgroundColor="Transparent"
+            TextColor="White"
+            Rotation="90"
+             />
+        </VerticalStackLayout>
+
+
+
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1">
+            <Button 
+            Command="{Binding ChangeDataCommand}"
+            CommandParameter="27"
+            WidthRequest="25"
+            HeightRequest="45"
+            Margin="0,0,40,355"
+            ZIndex="2"
+            HorizontalOptions="Center"
+            VerticalOptions="End"
+            BackgroundColor="Transparent"
+            TextColor="White"
+            Rotation="90"
+             />
+        </VerticalStackLayout>
+
+
+        <VerticalStackLayout  >
+            <Button 
+            Command="{Binding ChangeDataCommand}"
+            CommandParameter="28"
+            WidthRequest="25"
+            HeightRequest="45"
+            Margin="380,103,90,0"
+            ZIndex="2"
+            HorizontalOptions="Center"
+            VerticalOptions="End"
+            BackgroundColor="Transparent"
+            TextColor="White"
+            Rotation="90"
+             />
+        </VerticalStackLayout>
+
+
+
+
+
+
+
+        <Image Source="{Binding CurrentDataItem.ImagePath}" Grid.RowSpan="4" Aspect="Fill"   ZIndex="2" IsVisible="{Binding IsDataVisible}" />
+
+
+        <ImageButton Source="zoomy.png" 
+         Clicked="ImageButton_Clicked"
+         Grid.Row="1"  
+         HorizontalOptions="Start"
+         Background="Transparent"
+         Margin="10,0,0,10"
+         WidthRequest="100" 
+         VerticalOptions="End" 
+         HeightRequest="70"
+         ZIndex="1"/>
+
+        
+        
+        
+
+
+        <Label Text="{Binding CurrentDataItem.Description}" IsVisible="{Binding IsDataVisible}"
+                 FontSize="30"
+                 TextColor="Black"
+                 Margin="0,20,0,0"
+                 Rotation="90"
+                 ZIndex="2"
+                 Padding="5"
+                 VerticalTextAlignment="Center"
+                 HorizontalTextAlignment="Center"
+                 WidthRequest="250"
+                 HeightRequest="80"
+                 BackgroundColor="White"
+                 Grid.Row="1"
+                 HorizontalOptions="Start"
+                 VerticalOptions="Start"
+                 FontAttributes="Bold"
+                 TranslationX="0"/>
+
+
+        <Button Text="Exit"
+                    Command="{Binding ExitCommand}"
+                    WidthRequest="70"
+                    HeightRequest="50"
+                    VerticalOptions="End"
+                    HorizontalOptions="End"
+                    BackgroundColor="Black"
+                    Rotation="90"
+                    Margin="20,0,20,20"
+                    ZIndex="2"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    Grid.Row="3"
+                    TextColor="White"
+                    CornerRadius="10" />
+    </Grid>
+
+
+
+</ContentPage> 

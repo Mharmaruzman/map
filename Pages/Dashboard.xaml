@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:local ="clr-namespace:StudentGuide"
+             x:Class="StudentGuide.Pages.Dashboard"
+             NavigationPage.HasNavigationBar="False"
+             >
+
+    <Grid RowDefinitions="1*" >
+        <Image x:Name="myImage" Source="imap.jpg" Aspect="Fill"  Grid.Row="1">
+            <Image.GestureRecognizers>
+                <PanGestureRecognizer PanUpdated="OnPanUpdated"/>
+            </Image.GestureRecognizers>
+
+
+
+        </Image>
+
+        <HorizontalStackLayout Grid.Row="1" HeightRequest="60"  VerticalOptions="End" HorizontalOptions="End" ZIndex="1" Background="Transparent" Margin="20" Spacing="50" >
+
+            <ImageButton Source="zoomin.png"  Clicked="ZoomIn_Clicked"  HeightRequest="50" Background="Transparent"   />
+            <ImageButton Source="zoomout.png"  Clicked="ZoomOut_Clicked"   HeightRequest="50" Background="Transparent"  />
+            <ImageButton Source="reset.png" Clicked="Reset_Clicked" HeightRequest="50" Background="Transparent"  />
+
+
+        </HorizontalStackLayout>
+
+    </Grid>
+
+
+
+
+</ContentPage>
